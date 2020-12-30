@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Messages</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../assets/logo.png" type="image/icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8e73c86621.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            
+                <div class="navbar" id="branding">
+                    <img src="../assets/logo.png" alt="" style="width: 70px; height: 70px; margin-left: 40px; margin-top: 20px;">
+                    <a href="#" class="toggle-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a> 
+                </div>
+                
+        </header>
+
+       <div class="wrapper">
+           <div class="sidebar">
+             
+             <ul>
+                 
+                 <li><a href="create.html"><i class="fas fa-plus-square"></i> Create</a></li>
+                 <li><a href="articles-list.html"><i class="fas fa-newspaper"></i> Articles</a></li>
+                <li><a href="message.html" style="color: #ffff00;"><i class="fas fa-envelope-open"></i> messages</a></li>
+                <li><a href="skill.html"><i class="fas fa-head-side-virus"></i> Skills</a></li>
+                <li><a href="project.html"><i class="fas fa-cogs"></i> Projects</a></li>
+                <li><a href="#" class="logout">log Out </output></a></li>
+             </ul>
+           </div>
+       </div>
+        
+       <div class="content-form">
+        <div id="message-list">
+            <!-- <div class="message">
+                <label for=""><span style="color: lightblue; font-size: 20px;">From: </span>Name</label> <br>
+                <label for=""><span style="color: lightblue; font-size: 20px;">Email: </span>alexisvacilli1@gmail.com</label> <br>
+                <div class="text">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, mollitia.</div> 
+                <span class="date">10-11-2020</span>
+            </div>
+            <div class="message">
+                <label for=""><span style="color: lightblue; font-size: 20px;">From: </span>Name</label> <br>
+                <label for=""><span style="color: lightblue; font-size: 20px;">Email: </span>alexisvacilli1@gmail.com</label> <br>
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quo? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa quibusd quod tempora amet!</div> 
+                <span class="date">10-11-2020</span>
+            </div> -->
+            
+        </div>
+      </div>
+      </div>
+      
+   </div>    
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyCWVjdBDF_h7dJosqUvL2Tdw8Ak9V8ppzs",
+          authDomain: "my-brand-a3ccc.firebaseapp.com",
+          databaseURL: "https://my-brand-a3ccc.firebaseio.com",
+          projectId: "my-brand-a3ccc",
+          storageBucket: "my-brand-a3ccc.appspot.com",
+          messagingSenderId: "97264772827",
+          appId: "1:97264772827:web:1fbcf81a9ce96762dbcefe",
+          measurementId: "G-DEXY2PTGCZ"
+        };
+        
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        db.settings({timestampsInSnapshots: true});
+    </script>         
+    <!-- <script src="../script/app.js"></script> -->
+    <script src="/UI/admin/js/message.js"></script>
+
+</body>
+</html>
