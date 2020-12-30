@@ -29,6 +29,7 @@ close.addEventListener('click', () => {
 
 const form = document.querySelector('.in');
 console.log(form);
+console.log('Button clicked!')
 
 const validPassword = () => {
     const password = form.password.value;
