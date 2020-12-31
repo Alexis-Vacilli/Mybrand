@@ -2,7 +2,7 @@
 
 To get the node server running locally
 
-Clone this repo: https://github.com/Alexis-Vacilli/Personal-brand.git
+Clone this repo: https://github.com/Alexis-Vacilli/Mybrand.git
 npm install to install all the required dependencies
 npm run dev to start the local server
 Dependencies
