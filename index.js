@@ -1,6 +1,6 @@
 import express from "express";
-import connectoToMongo from "./config/mongoose";
-import motherRoute from "./routes/api/v1/article";
+import connectoToMongo from "./server/config/mongoose";
+import motherRoute from "./server/routes/api/v1/user";
 import bodyParser from "body-parser";
 import "@babel/polyfill";
 const app = express();
